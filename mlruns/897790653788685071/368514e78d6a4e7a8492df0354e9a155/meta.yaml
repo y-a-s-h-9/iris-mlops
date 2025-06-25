@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/yash_mac/Documents/Project/iris/mlruns/897790653788685071/368514e78d6a4e7a8492df0354e9a155/artifacts
+end_time: 1750876541761
+entry_point_name: ''
+experiment_id: '897790653788685071'
+lifecycle_stage: active
+run_id: 368514e78d6a4e7a8492df0354e9a155
+run_name: vaunted-seal-780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750876541692
+status: 3
+tags: []
+user_id: yash_mac

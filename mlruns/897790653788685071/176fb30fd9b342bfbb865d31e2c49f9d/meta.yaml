@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/yash_mac/Documents/Project/iris/mlruns/897790653788685071/176fb30fd9b342bfbb865d31e2c49f9d/artifacts
+end_time: 1750876262944
+entry_point_name: ''
+experiment_id: '897790653788685071'
+lifecycle_stage: active
+run_id: 176fb30fd9b342bfbb865d31e2c49f9d
+run_name: abundant-crow-352
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750876262871
+status: 3
+tags: []
+user_id: yash_mac

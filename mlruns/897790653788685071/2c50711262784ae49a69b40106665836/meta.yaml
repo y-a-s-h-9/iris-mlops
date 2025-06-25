@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/yash_mac/Documents/Project/iris/mlruns/897790653788685071/2c50711262784ae49a69b40106665836/artifacts
+end_time: 1750875827867
+entry_point_name: ''
+experiment_id: '897790653788685071'
+lifecycle_stage: active
+run_id: 2c50711262784ae49a69b40106665836
+run_name: ambitious-smelt-698
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750875827793
+status: 3
+tags: []
+user_id: yash_mac
