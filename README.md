@@ -13,7 +13,7 @@ This project demonstrates a complete end-to-end MLOps pipeline for classifying I
 
 ## Project Structure
 
-iris-mlops-project/  
+iris-mlops/  
 ├── data/                  # Dataset (iris.csv)  
 ├── src/                   # Model training and prediction scripts  
 │   ├── train.py  
