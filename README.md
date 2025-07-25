@@ -13,23 +13,27 @@ This project demonstrates a complete end-to-end MLOps pipeline for classifying I
 
 ## Project Structure
 
-iris-mlops/  
-├── data/                  # Dataset (iris.csv)  
-├── src/                   # Model training and prediction scripts  
-│   ├── train.py  
-│   ├── predict.py  
-│   └── utils.py  
-├── app/                   # FastAPI app  
-│   └── main.py  
-├── models/                # Trained model (model.pkl)  
-├── mlruns/                # MLflow logs  
-├── .github/workflows/     # GitHub Actions CI/CD  
-│   └── ci-cd.yml  
-├── requirements.txt  
-├── Dockerfile  
-├── dvc.yaml  
-└── README.md  
-
+``` bash 
+iris/
+├── .dvc/                  # DVC-related files for data/version control
+├── .github/               # GitHub workflows (CI/CD actions etc.)
+├── app/                   # Application interface or deployment-related code
+├── data/                  # Raw and processed datasets
+├── mlflow_logs/           # MLflow experiment logs
+├── mlruns/                # MLflow tracking run data
+├── models/                # Trained model artifacts
+├── src/                   # Core source code for training and inference
+│   ├── predict.py         # Prediction/inference logic
+│   ├── train.py           # Model training script
+│   ├── utils.py           # Utility functions
+├── venv/                  # Python virtual environment (usually not committed)
+├── .dvcignore             # DVC ignore file (like .gitignore)
+├── .gitignore             # Git ignore rules
+├── Dockerfile             # Docker setup for containerizing the project
+├── dvc.yaml               # DVC pipeline stages and dependencies
+├── README.md              # Project overview and documentation
+├── requirements.txt       # Python dependencies
+```
 ## Setup Instructions
 
 1. Clone and Install Dependencies
@@ -63,6 +67,7 @@ git commit -m "Add dataset with DVC"
 ```bash
 python src/train.py
 ```
+<img width="370" height="156" alt="Screenshot 2025-07-25 at 19 23 22" src="https://github.com/user-attachments/assets/859e85e6-bf5b-42a6-8c28-7708fe482893" />
 
 Output:
 - Trains the model  
@@ -77,8 +82,15 @@ uvicorn app.main:app --reload
 
 Open in browser:  
 http://127.0.0.1:8000  
+<img width="656" height="259" alt="Screenshot 2025-07-25 at 19 24 35" src="https://github.com/user-attachments/assets/85ff59dd-fc60-40b4-a182-466b112fe864" />
+
 Swagger docs:  
 http://127.0.0.1:8000/docs
+
+<img width="500" height="500" alt="Screenshot 2025-07-25 at 19 25 10" src="https://github.com/user-attachments/assets/62c599a3-d3a6-45c8-8dce-6761511fc823" />
+<img width="500" height="500" alt="Screenshot 2025-07-25 at 19 25 30" src="https://github.com/user-attachments/assets/d6df11ef-6f79-4b79-9644-93a9e879e1cd" />
+<img width="500" height="500" alt="Screenshot 2025-07-25 at 19 25 37" src="https://github.com/user-attachments/assets/877d0a27-f3eb-4c67-9338-02405c2604ea" />
+<img width="500" height="500" alt="Screenshot 2025-07-25 at 19 25 52" src="https://github.com/user-attachments/assets/66b603fd-6c16-4ff1-b71b-938dd3430f50" />
 
 6. Make Predictions
 
@@ -106,9 +118,19 @@ Expected response:
 ```bash
 mlflow ui
 ```
+<img width="737" height="271" alt="Screenshot 2025-07-25 at 19 27 52" src="https://github.com/user-attachments/assets/2e892ffb-28dd-49c2-96ad-a101ba13c76e" />
+
+
 
 Open in browser:  
 http://localhost:5000
+
+<img width="700" height="700" alt="Screenshot 2025-07-25 at 19 28 31" src="https://github.com/user-attachments/assets/d8bd1231-86df-4a35-b95e-09a5b0835f9b" />
+
+<img width="700" height="700" alt="Screenshot 2025-07-25 at 19 28 40" src="https://github.com/user-attachments/assets/ef24b195-eed1-4841-9232-c1420b8da94e" />
+
+<img width="700" height="700" alt="Screenshot 2025-07-25 at 19 29 13" src="https://github.com/user-attachments/assets/89af2532-37c4-4863-8720-7f28071e02e9" />
+
 
 ## Tools Used
 
